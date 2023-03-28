@@ -11,3 +11,7 @@ export function start(): i32 {
     hello();
     return 0;
 }
+
+export function greet(name: string): string {
+    return "Hello " + name + "!";
+}
