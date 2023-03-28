@@ -1,6 +1,6 @@
 // Importing a Rust function
-@external("host-exported", "echo")
-declare function echo(): void;
+@external("host-exported", "hello")
+declare function hello(): void;
 
 export function add(a: i32, b: i32): i32 {
     return a + b;
@@ -8,6 +8,6 @@ export function add(a: i32, b: i32): i32 {
 
 
 export function start(): i32 {
-    echo();
+    hello();
     return 0;
 }
